@@ -103,8 +103,8 @@ class TempWidget(QtGui.QWidget):
                 print("Last valid input: " + str(datetime.datetime.now()))
                 print("Temperature: %d C" % result.temperature)
                 print("Humidity: %d %%" % result.humidity)
-                self.le_dht11_hum.setText(result.humidity)
-                self.le_dht11_temp.setText(result.temperature)
+                self.le_dht11_hum.setText(str(result.humidity))
+                self.le_dht11_temp.setText(str(result.temperature))
 		
 
 def main():
